@@ -1,0 +1,39 @@
+
+.i {
+    background: linear-gradient(180deg, #edffe1, #e1ffea22 100%);
+    padding-right: 2.8rem;
+    padding-left: 2.8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+   
+    
+    
+}
+
+    
+
+
+.i img {
+    width: 350px;
+    height: 418px;
+}
+
+.p{
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+.t {
+    font-size: 1.5rem;
+    
+
+}
+.r{
+    font-size: 1.3rem;
+      
+}
+.u{
+    color: #1060df;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
