@@ -1,11 +1,10 @@
 
 .i {
-    background: linear-gradient(180deg, #edffe1, #e1ffea22 100%);
-    padding-right: 2.8rem;
-    padding-left: 2.8rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-   
+    background: linear-gradient(180deg, #f2a0d5, #e1ffea22 100%);
+    
+    display: "flex";
+    flex-direction: column;
+    gap:".6rem";
     
     
 }
