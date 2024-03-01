@@ -24,7 +24,7 @@ const LoginSignup = () => {
   const addHandler = (event) => {
     // console.log("Clicked")
     event.preventDefault();
-    if (inputs.Password == inputs.Confirmpassword) {
+    if (inputs.Password ===inputs.Confirmpassword) {
 
       console.log(inputs)
       axios.post("http://localhost:3005/lnew", inputs)
