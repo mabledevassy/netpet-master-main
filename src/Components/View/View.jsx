@@ -53,8 +53,8 @@ const View = () => {
       </div>
          
            <div className='p'>
-           <h3>{viewData.Subcategory}</h3> 
-           <p className='t'>{viewData.Category}</p>
+           <h3>{viewData.Category}</h3> 
+           <p className='t'>{viewData.Subcategory}</p>
            <p className='r'>{viewData.Description}</p>
           
             </div>

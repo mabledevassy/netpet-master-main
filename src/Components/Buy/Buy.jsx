@@ -3,13 +3,13 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { Buffer } from "buffer";
 import './Buy.css'
-import { Button, Grid, TextField, Typography } from '@mui/material';
+import { Button, Grid, Input, TextField, Typography } from '@mui/material';
 
 const Buy = () => {
     var[selectedimage,setSelectedimage]=useState(null);
     var[inputs,setInputs]=useState({
       
-  
+ 
         "Fname":'',
         "Address":'',
         "City":'',
@@ -36,6 +36,7 @@ const Buy = () => {
       
   }
 
+
     const [viewData, setViewData] = useState({});
   const { id } = useParams();
 
@@ -47,6 +48,8 @@ const Buy = () => {
   }, []);
   return (
     <div className='h'>
+     
+        
       {viewData.image1 && (
           <img
            
@@ -59,6 +62,13 @@ const Buy = () => {
            
           />
         )}
+       
+       
+       <input type="hidden" name="itemid" value={inputs.Price} onChange={inpuHandler} />
+
+{viewData.Price && (
+  <h3>&#8377;{viewData.Price}</h3>
+)}
 
       <Typography variant="h5" gutterBottom>
         Shipping Address
@@ -136,13 +146,13 @@ const Buy = () => {
             onChange={inpuHandler}
            
           />
+           </Grid> 
         </Grid>
-        <Grid item xs={12}>
-          <Button type="submit" variant="contained" color="primary" onClick={addHandler}>
+      <button className='my-button' onClick={addHandler} >
             Submit
-          </Button>
-        </Grid>
-      </Grid>
+          </button>
+
+     
    
     </div>
   )

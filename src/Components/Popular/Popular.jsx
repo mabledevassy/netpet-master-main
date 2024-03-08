@@ -22,11 +22,9 @@ const Popular = () => {
             <Item
               key={pos}
               id={rows._id}
-              category={rows.Category}
-              subcategory={rows.Subcategory}
-              image={`data:image/jpeg;base64,${Buffer.from(
-                rows.image1.data
-              ).toString("base64")}`}
+              category={rows.itemca.Cname}
+              subcategory={rows.itemsub.Sname}
+              image={`data:${rows.image1.contentType};base64,${rows.image1.data}`}
               description={rows.Description}
               price={rows.Price}
             />

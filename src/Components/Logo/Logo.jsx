@@ -1,6 +1,7 @@
 import React from 'react'
 import './Logo.css'
 import logo from '../Assets/logo.png'
+import { Link } from 'react-router-dom'
 
 const Logo = () => {
   return (
@@ -11,6 +12,7 @@ const Logo = () => {
       <img src= {logo}alt="" />
         <p>PETNET</p>
       </div>
+      <button className='button'><Link to='/login'>Logout</Link></button>
     </div>
   )
 }
